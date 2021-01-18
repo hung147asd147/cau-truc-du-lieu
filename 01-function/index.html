@@ -3,29 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta 
-        name="description" 
-        content="https://github.com/hohieuit/javascript-coban/tree/master/bai%20giai/function">
-
-    <script src="javascrip.js"></script>
+    <meta name="description" content="https://github.com/hohieuit/javascript-coban/blob/master/de%20bai/1_function.txt">
+    <script src="javascript.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
     <title>Bài tập hàm</title>
 </head>
 <body>
-    <h1>Bài 1: Function</h1>
-    <div id="ketQua"></div>
+    <div id="result">
 
+    </div>
     <script>
-            //truy cập node trên giao diện
-        var nodeKetQua = document.getElementById("ketQua");
-        var HTMLKetQua = "";
-        var n1 = 10;
-        var n2 = 8;
-        //Bài 1: Tính tổng 2 số
-        HTMLKetQua = HTMLKetQua + `<p>1: Tổng 2 số 10 và 8 là: ${tong(n1, n2)}`;
-        HTMLKetQua = HTMLKetQua + `, hiệu 2 số số 10 và 8 là: ${hieu(n1, n2)}</p>`;
-
-        // ghi kết quả ra giao diện
-        nodeKetQua.innerHTML = HTMLKetQua;
+        // Truy cap node
+        let nodeResult = document.getElementById('result');
+        let HTMLResult = "";
+        let a = 12;
+        let b = 4;
+        let s1= "xin chao moi nguoi";
+        let s2 = "Hello everybody";
+        let s3 = "hom nay troi dep";
+        let s4 = "chao chu cong an";
+        let s5 = "tien hoc le";
+        // Bai 1: Tinh tong 2 so
+        HTMLResult += `<h1 class="baitap">Tính toán với hai số a = ${a} và b = ${b}`
+        HTMLResult += `<p class ="baitap">Bài 1: Tổng của 2 số 12 và 4 là: ${tong(a,b)}</p>`
+        HTMLResult += `<p class ="baitap">Bài 2: Hiệu của 2 số 12 và 4 là: ${hieu(a,b)}</p>`
+        HTMLResult += `<p class ="baitap">Bài 3: Tích của 2 số 12 và 4 là: ${tich(a,b)}</p>`
+        HTMLResult += `<p class ="baitap">Bài 4: Thuong của 2 số 12 và 4 là: ${thuong(a,b)}</p>`
+        HTMLResult += `<p class ="baitap">Bài 5: Bình phương của số 1 số nhập vào là: 5^2= ${powOfNumber(5)}</p>`
+        HTMLResult += `<p class ="baitap">Bài 6: Bình phương của ${a} là: ${powOfNumber(a)} và bình phương của ${b} là: ${powOfNumber(b)}</p>`
+        HTMLResult += `<p class ="baitap">Bài 7: Số lớn nhất trong 2 số là: ${max(4,9)}</p>`
+        HTMLResult += `<p class ="baitap">Bài 8: Số lớn nhất trong 2 số ${a} và ${b} là: ${max(a,b)}</p>`
+        HTMLResult += `<p class ="baitap">Bài 9: Số nhỏ nhất trong 2 số là: ${min(4,9)}</p>`
+        HTMLResult += `<p class ="baitap">Bài 10: Số nhỏ nhất trong 2 số ${a} và ${b} là: ${min(a,b)}</p>`
+        HTMLResult += `<p class ="baitap">Bài 11: Trung bình cộng của 2 số là: ${avgNumber(5,8)}</p>`
+        HTMLResult += `<p class ="baitap">Bài 12: Trung bình cộng của 2 số ${a} và ${b} là: ${avgNumber(a,b)}</p>`
+        HTMLResult += `<p class ="baitap">Bài 13: Số dư sau khi chia 2 số là: ${modNumber(9,2)}</p>`
+        HTMLResult += `<p class ="baitap">Bài 14:  Số dư sau khi chia 2 số ${a} và ${b} là: ${modNumber(a,b)}</p>`
+        HTMLResult += `<p class ="baitap">Bài 15: ${checkModNumber(9,2)}</p>`
+        HTMLResult += `<p class ="baitap">Bài 16: Số a = ${a} và b = ${b} thì ${checkModNumber(a,b)}</p>`
+        HTMLResult += `<p class ="baitap">Bài 17: Chu vi hình chữ nhật với chiều dài = ${a} và chiều rộng = ${b} là: ${cvHinhChuNhat(a,b)}</p>`
+        HTMLResult += `<p class ="baitap">Bài 18: Diện tích hình chữ nhật với chiều dài = ${a} và chiều rộng = ${b} là: ${dtHinhChuNhat(a,b)}</p>`
+        HTMLResult += `<p class ="baitap">Bài 19: Chu vi hình tròn với bán kính = ${a} là: ${cvHinhTron(a)}</p>`
+        HTMLResult += `<p class ="baitap">Bài 20: Diện tích hình tròn với bán kính = ${b} là: ${dtHinhTron(b)}</p>`
+        HTMLResult += `<h1 class="baitap">Chuỗi`
+        HTMLResult += `<p class ="baitap">Bài 1: Cộng chuỗi: ${addString(s1,s2,s3,s4,s5)}</p>`
+        HTMLResult += `<p class ="baitap">Bài 2: Chuỗi viết hoa: ${upperString(s1,s2,s3,s4,s5)}</p>`
+        HTMLResult += `<p class ="baitap">Bài 3: Kiểm tra tồn tại: ${checkExistString(s1,s2)}</p>`
+        HTMLResult += `<p class ="baitap">Bài 4: Độ dài của chuỗi s: ${stringLength(s1,s2,s3,s4,s5)}</p>`
+        HTMLResult += `<p class ="baitap">Bài 5: Cắt chuỗi từ vị trí số 1 đến số 3: ${changeString(s1,s2,s3,s4,s5)}</p>`
+        HTMLResult += `<p class ="baitap">Bài 6: Chuỗi s1 = ${s1} và s2 = ${s2}: ${checkString(s1,s2)}</p>`
+        // Show ket qua
+        nodeResult.innerHTML=HTMLResult;
     </script>
 </body>
 </html>

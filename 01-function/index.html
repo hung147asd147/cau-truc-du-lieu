@@ -3,9 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bai lam</title>
+    <meta 
+        name="description" 
+        content="https://github.com/hohieuit/javascript-coban/tree/master/bai%20giai/function">
+
+    <script src="javascrip.js"></script>
+    <title>Bài tập hàm</title>
 </head>
 <body>
+    <h1>Bài 1: Function</h1>
+    <div id="ketQua"></div>
     
+
+    <script>
+            //truy cập node trên giao diện
+        var nodeKetQua = document.getElementById("ketQua");
+        var HTMLKetQua = "";
+        var n1 = 10;
+        var n2 = 8;
+        //Bài 1: Tính tổng 2 số
+        HTMLKetQua = HTMLKetQua + `<p>1: Tổng 2 số 10 và 8 là: ${tong(n1, n2)}`;
+        HTMLKetQua = HTMLKetQua + `, hiệu 2 số số 10 và 8 là: ${hieu(n1, n2)}</p>`;
+
+        // ghi kết quả ra giao diện
+        nodeKetQua.innerHTML = HTMLKetQua;
+    </script>
 </body>
 </html>

@@ -3,9 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lam bai</title>
+    <meta 
+        name="description" 
+        content="https://github.com/hohieuit/javascript-coban/tree/master/bai%20giai/function">
+
+    <script src="javascrip.js"></script>
+    <title>Bài tập vòng lặp</title>
 </head>
 <body>
-    
+    <h1>Bài 2: Vòng lặp</h1>
+    <div id="ketQua"></div>    
+
+    <script>
+        //truy cập node trên giao diện
+        var nodeKetQua = document.getElementById("ketQua");
+        var HTMLKetQua = "";
+        //Xuất ra 1 tin nhắn, n lần
+
+        //3Tính tổng từ 1 tới n
+        HTMLKetQua = HTMLKetQua + `<p>3. Tổng 1 đến 5 là: ${tinhTongTuMotToiN(5)}</p>`;
+
+        // ghi kết quả ra giao diện
+        nodeKetQua.innerHTML = HTMLKetQua;
+    </script>
 </body>
 </html>

@@ -4,3 +4,4 @@ function tong(a, b){
 function hieu(a, b){
     return a-b;
 }
+// HELLO CAC BAN

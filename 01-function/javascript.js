@@ -11,7 +11,7 @@ function thuong(a, b) {
     if (b != 0) {
         return a / b;
     } else {
-        return "Khong chia dc";
+        return "Không chia được";
     }
 }
 function powOfNumber(a) {
@@ -23,7 +23,7 @@ function max(a, b) {
     } else if (b > a) {
         return b;
     } else {
-        return "Hai so nay bang nhau";
+        return "Hai số này bằng nhau";
     }
 }
 function min(a, b) {
@@ -32,7 +32,7 @@ function min(a, b) {
     } else if (b < a) {
         return b;
     } else {
-        return "Hai so nay bang nhau";
+        return "Hai số này bằng nhau";
     }
 }
 function avgNumber(a, b) {
